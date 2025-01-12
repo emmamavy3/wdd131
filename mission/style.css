@@ -1,19 +1,21 @@
-
-
 h2 {
-    color: #006EB6;
-}
-
-title, ol {
-    margin: 1.5;
-}
-
-p {
-    align-items: left;
+  color: #006eb6;
+  font-size: 12;
 }
 
 
-Logo {
-    size: 150px;
+.title {
+  text-align: center;
+  letter-spacing: .2rem;
+  text-transform: capitalize;
 }
 
+content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.Logo {
+  height: 150px;
+  line-height: 1.5;
+}
