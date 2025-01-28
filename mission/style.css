@@ -1,21 +1,29 @@
 h2 {
   color: #006eb6;
-  font-size: 12;
+  border-bottom: .5px solid black;
+  width: 100%;
 }
-
 
 .title {
   text-align: center;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
+  /* line-height: 1.5; */
   text-transform: capitalize;
 }
 
-content {
-    max-width: 600px;
-    margin: auto;
+.content {
+  max-width: 600px;
+  margin: auto;
+  font-size: 20px;
 }
 
+div {
+  border: solid;
+
+}
+
+
 .Logo {
-  height: 150px;
-  line-height: 1.5;
+  height: 140px;
+  float: right;
 }
