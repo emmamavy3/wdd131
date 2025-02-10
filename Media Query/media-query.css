@@ -1,30 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+  font-family: "Roboto", sans-serif;
+}
 
-header, main, footer {
-    max-width: 640px;
-    margin: 1rem auto;
-    border: 1px solid #ddd;
-    padding: 1 rem;
-    background-color: bluish color
+header,
+main,
+footer {
+  max-width: 640px;
+  margin: 1rem auto;
+  border: 1px solid #d1c8c8;
+  padding: 1rem;
+  background-color: #869afc;
 }
 
 main {
-    disply: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
 }
 
 section {
-    padding: 1rem;
-    background-color: #fff;
+  padding: 1rem;
+  background-color: #fff;
 }
 
 @media screen and (min-width: 500px) {
-    header {
-        background-color: #000;
-        color: #fff
-    }
-    main {
-        grid-template-columns: 1fr, 1fr;
-    }
+  header {
+    background-color: #000;
+    color: #fff;
+  }
+  main {
+    grid-template-columns: 1fr, 1fr;
+  }
 }

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+:root {
+  --primary-color: #52489c;
+  --secondary-color: #59c3c3;
+  --accent-color: #f45b69;
+  --text-dark: #333;
+  --text-light: #ebebeb;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --secondary-font: Mooli, san-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 1.2em;
+  background: #ebebeb;
+}
+a:link,
+a:visited {
+  color: var(--accent-color);
+}
+
+h1,
+nav,
+h2 {
+  text-align: center;
+  margin: auto;
+  padding: 2px;
+}
+
+h3 {
+  text-align: center;
+  color: #333;
+}
+
+header {
+  background: #52489c;
+  color: #ebebeb;
+}
+
+/* .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+} */
+
+figure {
+  border: solid #fff;
+  object-fit: cover;
+  height: 250px;
+  width: 250px;
+  max-width: 100%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 10px; /* Space between images */
+  max-width: 600px; /* Adjust as needed */
+  margin: auto; /* Centers the gallery */
+}
+
+footer {
+  background: #52489c;
+  color: #ebebeb;
+}
+
+@media screen and (min-width: 700px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+}
