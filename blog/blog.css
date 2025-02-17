@@ -2,7 +2,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: auto;
+  color: #473144;
 }
 
 header {
@@ -13,18 +13,16 @@ h1 {
   color: #473144;
 }
 
-ul {
+nav ul {
   display: grid;
   grid-template-columns: repeat(3, 80px);
   color: #af1b3f;
-  margin: 10px;
   justify-content: end;
   justify-items: end;
   border-bottom: solid #efc69b;
   border-top: solid #efc69b;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  max-width: 90%;
 }
 
 h2 {
@@ -33,6 +31,30 @@ h2 {
 
 main {
   display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  align-items: start;
+}
+
+.book {
+  min-width: 380px;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+.book-image {
+  display: block;
+  justify-self: center;
+}
+
+.book-info {
+  border-right-color: #efc69b;
+}
+
+.filter-section {
+  min-width: 150px;
+  border: 1px solid #af1b3f;
 }
 
 article {
