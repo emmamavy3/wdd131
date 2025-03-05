@@ -14,9 +14,13 @@ body {
   font-size: 1.2em;
   background: #ebebeb;
 }
-a:link,
+
 a:visited {
   color: var(--accent-color);
+}
+
+a{
+  color: #ebebeb
 }
 
 h1,
@@ -25,6 +29,11 @@ h2 {
   text-align: center;
   margin: auto;
   padding: 2px;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
 }
 
 h3 {
@@ -37,13 +46,16 @@ header {
   color: #ebebeb;
 }
 
+
+
 /* .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 } */
 
-figure {
-  border: solid #fff;
+img {
+  border: solid #fff 8px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
   object-fit: cover;
   height: 250px;
   width: 250px;
@@ -52,9 +64,8 @@ figure {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  grid-template-columns: 1fr; /* Creates 3 equal columns */
   gap: 10px; /* Space between images */
-  max-width: 600px; /* Adjust as needed */
   margin: auto; /* Centers the gallery */
 }
 
@@ -69,5 +80,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 1000px) {
+ .gallery{
+  grid-template-columns: repeat(3, 1fr);
+ }
 }
