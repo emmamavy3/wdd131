@@ -8,10 +8,6 @@
   --secondary-font: "Amatic SC", sans-serif;
 }
 
- {
-    border: 1px solid red
-}
-
 header {
   display: flex;
   gap: 0.5rem;
