@@ -109,7 +109,19 @@ function searchList2(list, querry) {
   }
   return list.filter(searchCallback);
 }
-const filtered = hikes.filter(hike => hike.distance.length > 5)
-const filteredList = searchList2(filtered, "al");
+
+// hikes.sort((a,b) => a.distance > b.distance);
+
+hikes.sort((a,b) => {
+  // const aDistance = a.distance.replace("miles", "");
+  const aDistance = parseFloat(a.distance);
+  //const bDistance = b.distance.replace("miles", "");
+  const bDistance = parseFloat(b.distance);
+  return aDistance - bDistance;
+
+});
+
+const filteredList = searchList2(hikes, "al");
 console.log(filteredList);
+
 
