@@ -2,6 +2,7 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Solway:wght@300;400;500;700;800&display=swap");
 
 :root {
   /* change the values below to your colors from your palette */
@@ -17,7 +18,7 @@ Fonts are separated by a | */
 
   /* change the values below to your chosen font(s) */
   --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --paragraph-font: Solway, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: var(
@@ -96,6 +97,7 @@ p {
 
 .primary {
   background-color: var(--primary-color);
+  color: #837569;
 }
 .secondary {
   background-color: var(--secondary-color);
@@ -126,6 +128,7 @@ p {
 }
 .secondaryDark {
   background-color: var(--secondary-colorDark);
+  color: ;
 }
 .accent1Dark {
   background-color: var(--accent1-colorDark);
@@ -161,6 +164,12 @@ nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+}
+.wireframe {
+  max-width: 620px;
+}
+.content {
+  max-width: 500px;
 }
 
 .sitemap {

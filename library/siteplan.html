@@ -19,23 +19,27 @@
       <h2>Overview</h2>
       <h3>Purpose</h3>
       <p>
-        I want to make a site that will allow me too view all my favorite moives
-        and books. It will also should help me recive recmondations from others
+        I want to make a site that will allow me to view all my favorite movies
+        and books. It should also help me receive recommendations from others.
+        This website will also eventually help others keep track of their
+        favorite books and movies.
       </p>
       <!-- change this -->
 
       <h3>Audience</h3>
       <p>
         I am the main audience especially at the start but I would like to make
-        it a site where people can share recomandations. That would make it for
-        anyone looking for a good book to read or moive to watch.
+        it a site where people can share recommendations. That would make it so
+        movie and book lovers can also have a place to record their favorite
+        books and movies.
       </p>
       <!-- change this -->
 
       <h3>Dynamic elements</h3>
       <p>
-        I will use Dynamic elements to make a dark mode. I will also add the
-        books and moives and there discriptions through this.
+        I will implement a dark mode toggle using JavaScript and dynamically
+        display books and movies by fetching data from a database or user
+        submissions.
       </p>
       <!-- change this -->
 
@@ -103,11 +107,11 @@
       <!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
 
       <h4>
-        Heading Font: [Font Name here]
+        Heading Font: IM Fell French Canon SC
         <!-- change this -->
       </h4>
       <h4>
-        Paragraph Font: [Font Name here]
+        Paragraph Font: Solway, Helvetica, sans-serif
         <!-- change this -->
       </h4>
       <h3>Normal paragraph example</h3>
@@ -134,16 +138,42 @@
       <!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
       <nav>
         <a href="#">Home</a>
-        <a href="#">Page2</a>
-        <a href="#">Page3</a>
+        <a href="#">Favorites</a>
+        <a href="#">Suggestions</a>
       </nav>
       <hr />
 
       <h2>Content</h2>
       <h3>Home page</h3>
-      <p>[content, images, data for the home page]</p>
-      <h3>[Page 2]</h3>
-      <p>[content, images, data for the subpage]</p>
+      <img
+        class="content"
+        src="booksandmoives.jpg"
+        alt="Books with a directors take on top"
+      />
+      <p>
+        submissions box, a picture with a link to the books page and a picture
+        with a link to the movies page
+      </p>
+      <h3>Books</h3>
+      <img
+        class="content"
+        src="Books-On-Bookshelf.jpg"
+        alt="old books on a bookshelf"
+      />
+      <p>
+        this will pull from a database as well as submissions to display books
+        with descriptions and a picture of the covers
+      </p>
+      <h3>Movies</h3>
+      <img
+        class="content"
+        src="family-movies-opener-F.jpg"
+        alt="screenshots from many different movies laid out on film strips"
+      />
+      <p>
+        this will pull from a database as well as submissions to display movies
+        with descriptions and a picture of the cover image
+      </p>
       <h2>Wireframes</h2>
       <p>
         Create two wireframes for your site. One for each page and list them
@@ -152,17 +182,19 @@
 
       <h3>Home</h3>
       <p>
-        [Any additional details about home that the wireframe does not make
-        clear]
+        The suggestion box will ask for if they want to submit a book or a movie
+        and based on that will ask for Title, Author, director, publishing date,
+        release date, page numbers, duration, and genre
       </p>
-      <img src="#" alt="home page wireframe" />
+      <img class="wireframe" src="Home.png" alt="home page wireframe" />
 
-      <h3>[Page 2]</h3>
+      <h3>Page 2 & 3</h3>
       <p>
-        [Any additional details about page 2 that the wireframe does not make
-        clear]
+        You will be able to scroll through and see all the diffrent books and
+        movies I am not sure if i will put in a filter or not yet but if i do it
+        will be on the right side above the search bar
       </p>
-      <img src="#" alt="page 2 wireframe" />
+      <img class="wireframe" src="page1&2.png" alt="page 2 & 3 wireframe" />
     </main>
   </body>
 </html>
