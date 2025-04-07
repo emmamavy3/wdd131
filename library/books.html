@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Book and Movie Favorites" />
+    <meta name="description" content="Book Favorites" />
     <meta name="author" content="Emma Mavy" />
     <title>Library</title>
     <link rel="stylesheet" href="style/library.css" />
-    <script src="main.js" defer></script>
+    <script src="main.mjs" type="module" defer></script>
   </head>
   <body>
     <header>
@@ -27,18 +27,21 @@
         <img
           id="hero-img"
           src="style/images/Books-On-Bookshelf.jpg"
-          alt="A collection of Books & Movies"
+          alt="A collection of Books"
         />
       </div>
       <section id="hero-msg">
         <h1 class="home-title">Mavy Library</h1>
-        <h4>One must always be carefull with books and what's inside them for books have the power to change us</h4>
+        <h4>
+          One must always be carefull with books and what's inside them for
+          books have the power to change us
+        </h4>
       </section>
     </div>
-    <main>
+    <main id="main-content">
       <form action="#">
         <div class="search_row">
-          <input type="search" placeholder="Find a book or movie" />
+          <input type="search" id="search-field" name="search" placeholder="Find a book or movie" />
           <button type="submit" class="search_button">
             <img src="style/images/search.svg" alt="search symbol" />
           </button>

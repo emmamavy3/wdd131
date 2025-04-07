@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Book and Movie Favorites" />
+    <meta name="description" content="Movie Favorites" />
     <meta name="author" content="Emma Mavy" />
     <title>Library</title>
     <link rel="stylesheet" href="style/library.css" />
-    <script src="main.js" defer></script>
+    <script src="main.mjs" type="module" defer></script>
   </head>
   <body>
     <header>
@@ -16,12 +16,8 @@
         <a href="index.html">Home</a>
         <a href="books.html">Books</a>
         <a href="movies.html">Movies</a>
-
-        <!-- <button id="dark-mode-toggle">Dark Mode</button> -->
-
       </nav>
       <button id="dark-mode-toggle">Dark Mode</button>
-
     </header>
 
     <div id="hero">
@@ -29,7 +25,7 @@
         <img
           id="hero-img"
           src="style/images/movieseat.avif"
-          alt="A collection of Books & Movies"
+          alt="Movie theater seats"
         />
       </div>
       <section id="hero-msg">
@@ -37,7 +33,7 @@
         <h4>Adventure Awaits</h4>
       </section>
     </div>
-    <main>
+    <main id="main-content">
       <form action="#">
         <div class="search_row">
           <input type="search" placeholder="Find a book or movie" />
@@ -46,7 +42,6 @@
           </button>
         </div>
       </form>
-
     </main>
     <footer>
       <p>&copy; 2023 Mavy Library. All rights reserved.</p>
