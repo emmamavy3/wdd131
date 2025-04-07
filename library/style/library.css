@@ -1,0 +1,329 @@
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #22181c;
+  --secondary-color: #f0a202;
+  --accent1-color: #837569;
+  --accent2-color: #bfd2bf;
+
+  --primary-colorDark: #778da9;
+  --secondary-colorDark: #07004d;
+  --accent1-colorDark: #bfd7ea;
+  --accent2-colorDark: #d4aa7d;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "IM Fell French Canon SC";
+  --paragraph-font: Solway, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(
+    --primary-color
+  ); /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: var(
+    --primary-color
+  ); /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--primary-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #778da9;
+    --secondary-color: #07004d;
+    --accent1-color: #bfd7ea;
+    --accent2-color: #d4aa7d;
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */
+    --paragraph-background-color: var(--primary-color);
+    --nav-link-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: var(--primary-color);
+  }
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--accent1-color);
+  outline-offset: 3px;
+}
+
+.Logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 75%;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+nav a {
+  text-align: center;
+  background-color: var(--accent1-color);
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 10px 20px;
+}
+nav a:hover {
+  background-color: var(--secondary-color);
+  text-decoration: underline;
+  color: var(--accent2-color);
+}
+
+#dark-mode-toggle {
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#dark-mode-toggle:hover {
+  background-color: var(--accent1-color);
+  color: white;
+}
+
+header {
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+
+#hero-msg h1,
+#hero-msg h4 {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: aliceblue;
+}
+#hero-msg h1 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  font-family: var(--heading-font);
+  font-weight: 400;
+}
+#hero-msg h4 {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  font-family: var(--heading-font);
+  font-weight: 400;
+}
+
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  z-index: -1;
+}
+
+#hero-img {
+  width: 100%;
+  height: auto;
+  max-height: 550px;
+  object-fit: cover;
+}
+
+#hero-msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-column: 1/ -1;
+  grid-row: 1/3;
+  padding: 4rem 1rem;
+}
+
+.search_row {
+  display: flex;
+  margin: 1%;
+  padding: 0.8%;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.search_row input {
+  flex-grow: 1;
+  height: 2rem;
+}
+
+.search_row img {
+  height: 23px;
+}
+
+body {
+  font-family: var(--paragraph-font);;
+  color: var(--paragraph-color-on-white);
+  margin: 0;
+  padding: 0;
+}
+
+.books,
+.movies {
+  margin: 2rem;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 3rem 1rem;
+}
+
+.linkImg {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.linkImg {
+  transition: transform 0.3s ease;
+}
+.linkImg:hover {
+  transform: scale(1.03);
+}
+
+fieldset {
+  border: 2px solid var(--accent1-color);
+  padding: 1rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  background-color: var(--accent2-color);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+fieldset legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+fieldset label {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-top: 1rem;
+  font-weight: bold;
+  display: block;
+}
+
+fieldset input,
+fieldset textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--accent1-color);
+  border-radius: 5px;
+}
+
+fieldset button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: var(--accent1-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+fieldset button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transition: background-color 0.3s ease;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.social-media a {
+  color: var(--accent1-color);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: var(--accent2-color);
+  text-decoration: underline;
+}
+
+body.dark-mode {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-white);
+}
+
+body.dark-mode header {
+  background-color: var(--primary-color);
+}
+
+body.dark-mode nav a {
+  color: var(--nav-link-color);
+}
+
+body.dark-mode footer {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
+
+@media (max-width: 600px) {
+  header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  #hero-msg h1 {
+    font-size: 2rem;
+  }
+
+  .books,
+  .movies {
+    margin: 1rem;
+  }
+
+  .search_row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search_row input {
+    width: 100%;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin: auto;
+  }
+}
