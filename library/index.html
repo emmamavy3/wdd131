@@ -5,36 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Book and Movie Favorites" />
     <meta name="author" content="Emma Mavy" />
-    <title>Library</title>
+    <title>Library Home</title>
     <link rel="stylesheet" href="style/library.css" />
     <script src="main.mjs" type="module" defer></script>
   </head>
   <body>
     <header>
-      <img class="Logo" src="style/images/logobright.png" alt="Bright Logo" />
+      <a href="index.html">
+        <img
+          class="Logo"
+          src="style/images/logobright.avif"
+          id="site-logo"
+          alt="Mavy Library logo"
+          title="Toggle Dark Mode"
+          width="200"
+          height="100"
+          style="cursor: pointer"
+        />
+      </a>
       <nav>
         <a href="index.html">Home</a>
         <a href="books.html">Books</a>
         <a href="movies.html">Movies</a>
-
-        <!-- <button id="dark-mode-toggle">Dark Mode</button> -->
-
       </nav>
-      <button id="dark-mode-toggle">Dark Mode</button>
-
     </header>
 
     <div id="hero">
       <div id="hero-box">
         <img
-          id="hero-img"
-          src="style/images/adventure.jpg"
+          id="hero-image-home"
+          src="style/images/adventure.avif"
           alt="A collection of Books & Movies"
         />
       </div>
       <section id="hero-msg">
         <h1 class="home-title">Mavy Library</h1>
-        <h4>Where will you travel today?</h4>
+        <h2>Where will you travel today?</h2>
       </section>
     </div>
     <main>
@@ -45,8 +51,8 @@
           <a href="books.html" class="book-link">
             <img
               class="linkImg"
-              src="style/images/Books-On-Bookshelf.jpg"
-              alt="Books wating to be discovered"
+              src="style/images/Books-On-Bookshelf.avif"
+              alt="Books waiting to be discovered"
             />
           </a>
         </article>
@@ -56,8 +62,8 @@
           <a href="movies.html" class="movie-link">
             <img
               class="linkImg"
-              src="style/images/family-movies-opener-F.jpg"
-              alt="Our library of movie favorites"
+              src="style/images/family-movies-opener-F.avif"
+              alt="Our library of movie favorites screenshots"
             />
           </a>
         </article>

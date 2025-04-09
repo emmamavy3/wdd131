@@ -5,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Movie Favorites" />
     <meta name="author" content="Emma Mavy" />
-    <title>Library</title>
+    <title>Library Movies</title>
     <link rel="stylesheet" href="style/library.css" />
     <script src="main.mjs" type="module" defer></script>
   </head>
   <body>
     <header>
-      <img class="Logo" src="style/images/logobright.png" alt="Bright Logo" />
+      <a href="index.html">
+        <img
+          class="Logo"
+          src="style/images/logobright.png"
+          id="site-logo"
+          alt="Mavy Library logo"
+          title="Toggle Dark Mode"
+          width="200"
+          height="100"
+          style="cursor: pointer"
+        />
+      </a>
       <nav>
         <a href="index.html">Home</a>
         <a href="books.html">Books</a>
         <a href="movies.html">Movies</a>
       </nav>
-      <button id="dark-mode-toggle">Dark Mode</button>
     </header>
 
     <div id="hero">
       <div id="hero-box">
         <img
-          id="hero-img"
+          id="hero-image"
           src="style/images/movieseat.avif"
           alt="Movie theater seats"
         />
@@ -33,16 +43,21 @@
         <h4>Adventure Awaits</h4>
       </section>
     </div>
-    <main id="main-content">
-      <form action="#">
-        <div class="search_row">
-          <input type="search" placeholder="Find a book or movie" />
-          <button type="submit" class="search_button">
-            <img src="style/images/search.svg" alt="search symbol" />
-          </button>
-        </div>
-      </form>
-    </main>
+    <form action="#">
+      <div class="search_row">
+        <input
+          type="search"
+          id="search-field"
+          name="search"
+          placeholder="Find a book or movie"
+          aria-label="Search for a book or movie"
+        />
+        <button type="submit" class="search_button">
+          <img src="style/images/search.svg" alt="search symbol" />
+        </button>
+      </div>
+    </form>
+    <main id="main-content"></main>
     <footer>
       <p>&copy; 2023 Mavy Library. All rights reserved.</p>
       <div class="social-media">

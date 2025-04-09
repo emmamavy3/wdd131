@@ -10,6 +10,8 @@ const library = [
     imgAlt: "Cover page of Harry Potter and the Goblet of Fire",
     genre: "Fantasy",
     publish_Date: "July, 2000 ",
+    Stars:
+      "Harry Potter, Hermione Granger, Ron Weasley",
   },
   {
     id: 3,
@@ -22,6 +24,8 @@ const library = [
       "A young boy by the name of Owen Kiskaddon is sent to Kingfountain as a hostage after his father, the Duke of Westmarch, betrays the king in battle. To survive in this strange, new court, full of loyalty and deception, he has to prove to the king that he is worth more alive than dead.",
     genre: "Fantasy",
     publish_Date: "April, 2016",
+    Stars:
+      "Owen Kiskaddon, Elizabeth Victoria Mortaimer, King Severn Argentine",
   },
   {
     id: 5,
@@ -34,6 +38,8 @@ const library = [
       "When Tessa Gray crosses the ocean to find her brother, her destination is England, the time is the reign of Queen Victoria, and something terrifying is waiting for her in London's Downworld, where vampires, warlocks, and other supernatural folk stalk the gaslit streets. Only the Shadowhunters, warriors dedicated to ridding the world of demons, keep order amidst the chaos.",
     genre: "Fantasy",
     publish_Date: "August, 2010",
+    Stars:
+      "Tessa Gray, Will Herondale, Jem Carstairs",
   },
   
 
@@ -81,25 +87,3 @@ const library = [
   },
 ]
 export default library;
-
-export function displayItems(items) {
-    const cards = document.getElementById("cards");
-    cards.innerHTML = "";
-  
-    items.forEach((item) => {
-      const card = document.createElementByID("cards");
-      card.innerHTML = "";
-  
-      card.innerHTML = `
-        <h2>${item.title}</h2>
-        <h2>${item.Author || item.director}</h2>
-        <img src="${item.imgSrc}" alt="${item.imgAlt}" />
-        <p>${item.description}</p>
-        <p>${item.genre}</p>
-        <p>${item.publish_Date || item.release_Date}</p>
-        <p>${item.Stars}</p>
-        `;
-  
-      cards.appendChild(card);
-    });
-  }
